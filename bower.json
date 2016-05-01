@@ -17,6 +17,9 @@
     "package.json"
   ],
   "dependencies": {
-    "purescript-eff": "^1.0.0"
+    "purescript-eff": "../purescript-eff#master"
+  },
+  "resolutions": {
+    "purescript-prelude": "^1.0.0-rc.1"
   }
 }
