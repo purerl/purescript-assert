@@ -15,10 +15,8 @@
 checkThrows(F) ->
   fun () ->
     try
-      begin
-        F(),
-        false
-      end
+      F(unit),
+      false
     catch
       _ -> true
     end
