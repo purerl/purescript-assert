@@ -1,8 +1,8 @@
 % module Test.Assert
 -module(test_assert@foreign).
--export(['assert\''/1, checkThrows/1]).
+-export([assertImpl/1, checkThrows/1]).
 
-'assert\''(Message) ->
+assertImpl(Message) ->
   fun (Success) ->
     fun () ->
       case Success of
